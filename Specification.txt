@@ -1,0 +1,35 @@
+import graphics lib
+
+class for drawing background
+	create an 8 x 8 grid
+	use a nested for loop to draw background
+	object keeps track of where pieces are on the grid
+
+class for drawing pieces
+	creates a piece that fill on space on the 8x8 grid
+	pieces are circle shape and are either white or black(red)
+	create 12 pieces for each player
+	Give pieces a starting position
+	
+set up board
+set up checker pieces positions					
+
+main function
+while loop until game over
+make current turn black
+
+handle events - interaction events are handled by getting x and y position of mouse
+	-check to see if the player has made a legal move
+	-players cannot move backward(maybe limit the players choices by restricting only to legal moves)
+	-players can only move one space forward and in a diagonal direction
+update gamestate	
+	-update changes made to the game
+	-pieces moved
+	-if any pieces are captured 
+update state to screen
+	-draw next movable space(shows legal moves)
+	-draw the piece that has moved
+check for game over state	
+	-if either player captures all the others pieces or
+	 one of the players can no longer make any more moves
+	-else current turn now belongs to the other player(in this case white)
